@@ -3,5 +3,22 @@
   "framework": null,
   "buildCommand": "",
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/sylva",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/sylva",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sylva/:path*",
+      "destination": "/:path*"
+    }
+  ]
 }
